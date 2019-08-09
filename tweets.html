@@ -11,12 +11,18 @@
   <div id="contain">
     <div class="sideView">
       <div class="emptyDiv"></div>
-      <div>SeongHo Yang</div>
-      <span>Tweets</span>
-      <span class="tweetCount"></span>
+      <div class="tweetInfoBox">
+        <div class="tweetInfo userName">SeongHo Yang</div>
+        <span class="tweetInfo">Tweets</span>
+        <span class="tweetInfo tweetCount"></span>
+      </div>
     </div>
     <div class="mainView">
       <textarea placeholder="what's happening?" class="textBox"></textarea>
+      <div class="textInfo">
+        <span class="curTextLength"></span>
+        <span class="maxTextLength"></span>
+      </div>
       <input type="button" value="Tweet" class="addTweetButton">
     </div>
     <ul class="tweetContain">
