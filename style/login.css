@@ -19,11 +19,17 @@ h1 {
     width: 50%;
     height: 60px;
     padding: 10px;
-    margin-bottom: 40px;
+    
     font-size: 1.5rem;
     border: none;
     border-bottom: solid 3px gray;
     background-color: whitesmoke
+}
+.inputEmailNoti {
+    width: 50%;
+    margin: 0 auto;
+    color: red;
+    font-weight: bold;
 }
 .inputPw {
     display: block;
@@ -43,7 +49,7 @@ h1 {
      border-radius: 40px;
      border: 1px;
      color: white;
-     background-color: dodgerblue;
+     background-color: gray;
      font-size: 2rem;
      padding: 10px;
 }

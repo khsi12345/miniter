@@ -21,8 +21,6 @@ function createElement(username, content, data) {
   newTweet.appendChild(tweetUser);
   newTweet.appendChild(tweetContent);
   tweetContain.appendChild(newTweet);
-
-  // data.push({})
 }
 
 function countTweetContens(data) {
@@ -35,39 +33,11 @@ function countTweetContens(data) {
 
 
 function renderTweets(args) {
-  // let newTweet
-  // let tweetUser;
-  // let tweetContent;
-  for (let i = 0; i < args.length; i++) {
-    // tweetContain.innerHTML += `<div><li>${data[i].user}${data[i].contents}</li></div>`;
-    // newTweet = document.createElement('li');
-    // newTweet.classList.add('tweet')
-    // tweetUser = document.createElement('h5');
-    // tweetContent = document.createElement('sapn');
   
+  for (let i = 0; i < args.length; i++) {
     createElement(args[i].user, args[i].contents, args)
-    // tweetUser.innerHTML = args[i].user;
-    // tweetContent.innerHTML = args[i].contents;
-    // newTweet.appendChild(tweetUser);
-    // newTweet.appendChild(tweetContent);
-    // tweetContain.appendChild(newTweet);
   }
     countTweetContens(args)
-  // console.dir(userName)
-  // newTweet = document.createElement('li');
-  // tweetUser = document.createElement('h5');
-  // tweetContent = document.createElement('sapn');
-  // tweetUser.innerHTML = userName.textContent;
-  // tweetContent.innerHTML = textArea.value;
-  // newTweet.appendChild(tweetUser);
-  // newTweet.appendChild(tweetContent);
-  // tweetContain.appendChild(newTweet);
-
-  // let count = document.createElement('span');
-  // tweetCount.value = args.length;
-  // count.innerHTML = tweetCount.value;
-  // // console.dir(tweetCount)
-  // tweetCount.appendChild(count);
 
   let contents = document.createElement('span');
   contents.innerHTML = "최대 " + maxContentsOfTextArea + "글자수";
@@ -78,8 +48,6 @@ function renderTweets(args) {
 renderTweets(data);
 
 //글자수 제한 이벤트 
-// console.dir(textArea)
-
 textArea.addEventListener('keyup', function(e) {
   
 // console.log(e.target.value)
@@ -114,12 +82,6 @@ curTextLength.appendChild(curContents)
 //     tweetContain.appendChild(temp);
 //   }
 // }
-
-// let elementA = document.getElementById("ID");
-// elementA.style.backgroundImage = "";
-
-// let elementA = document.getElementsByClassName("CLASS").item(0);
-// let elementA = document.querySelector("#ID");
 
 function newTweet() {
   // console.dir()
