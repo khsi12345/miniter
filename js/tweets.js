@@ -93,3 +93,7 @@ function newTweet() {
   curContents.innerHTML = 0;
 }
 tweetBtn.addEventListener('click', newTweet);
+
+
+
+
